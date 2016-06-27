@@ -1,0 +1,86 @@
+.header {
+  background: #4285F4; }
+  .header .brand {
+    padding: 30px 20px 30px; }
+  .header h1, .header h2, .header h3 {
+    margin: 0; }
+  .header a {
+    color: #fff; }
+  .header a:hover, .header a:focus, .header a:active {
+    text-decoration: none; }
+
+.search-bar {
+  background: #fff;
+  padding: 20px;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.16), 0px 0px 3px rgba(0, 0, 0, 0.23);
+  border: 1px solid transparent;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); }
+  .search-bar ::-webkit-input-placeholder {
+    /* WebKit browsers */
+    color: #c2c2c2; }
+  .search-bar :-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: #c2c2c2; }
+  .search-bar ::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: #c2c2c2; }
+  .search-bar :-ms-input-placeholder {
+    /* Internet Explorer 10+ */
+    color: #c2c2c2; }
+  .search-bar .form-control:focus {
+    outline: none;
+    border-bottom: 1px solid #dcdcdc; }
+  .search-bar .form-control:focus .auto-complete {
+    display: block; }
+
+.auto-complete {
+  background: #fff;
+  width: 100%;
+  z-index: 999; }
+  .auto-complete ul {
+    list-style: none;
+    border-top: 1px solid #dcdcdc;
+    padding: 0;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.16), 0px 1px 2px rgba(0, 0, 0, 0.23); }
+    .auto-complete ul li {
+      padding: 20px 20px 20px 40px;
+      border-bottom: 1px solid #dcdcdc;
+      color: #424242;
+      transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); }
+    .auto-complete ul li:hover {
+      background: #F5F5F5; }
+    .auto-complete ul a:hover, .auto-complete ul a:focus, .auto-complete ul a:active {
+      text-decoration: none; }
+
+body {
+  background: #F5F5F5; }
+
+.search-result {
+  background: #fff; }
+  .search-result ul {
+    list-style: none;
+    padding: 0;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.16), 0px 0px 3px rgba(0, 0, 0, 0.23); }
+    .search-result ul li {
+      padding: 30px 20px 30px 40px;
+      border-bottom: 1px solid #dcdcdc;
+      transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); }
+      .search-result ul li a {
+        color: #424242;
+        font-weight: bold; }
+
+.content {
+  background: #fff;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.16), 0px 0px 3px rgba(0, 0, 0, 0.23);
+  padding: 20px;
+  overflow: auto;
+  word-wrap: break-word; }
+  .content .thumbnail {
+    margin-top: 20px; }
+
+.back {
+  margin: 10px 0; }
+
+/*# sourceMappingURL=style.css.map */

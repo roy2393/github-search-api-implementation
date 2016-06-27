@@ -1,0 +1,138 @@
+.side-control{
+  .subscript:hover{
+    text-decoration: underline;
+  }
+  .subscript,.subscript:hover, .subscript:focus, .subscript:active{
+    color: $l-green;
+  }
+}
+
+.sub-heading{
+
+  margin: 10px 0;
+  p{
+    font-size: 12px;
+    margin: 0;
+  }
+}
+.sort{
+
+  background: $l-green-bg;
+  border: 1px solid $l-border-color;
+  margin-bottom: 20px;
+  font-size: 12px;
+  ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: table;
+    width: 100%;
+    li{
+      float: left;
+      display: table-cell;
+      padding: 10px;
+
+      i{
+        font-size: 18px;
+      }
+
+      @media (max-width:400px) {
+        i{
+          font-size: 12px;
+        }
+      }
+
+      .fa-caret-down,.fa-caret-up{
+        font-size: 12px;
+      }
+
+      button {
+       color: $green;
+       text-decoration: none;
+       border: 0px;
+       background: none;
+      }
+      button:hover, button:focus {
+       color: $d-green;
+       border: none;
+       outline: none;
+      }
+    }
+  }
+}
+
+.search-res{
+
+  .flight-detail{
+    display: block;
+    overflow: auto;
+    background: $white;
+    border: 1px solid $l-border-color;
+    margin-bottom: 10px;
+    div{
+      float: left;
+      padding: 10px;
+    }
+
+    @media (min-width:769px) {
+      div{
+        line-height: 67px;
+      }
+    }
+
+
+    .price{
+      color: $green;
+    }
+    @media (min-width:769px) {
+      .price{
+        font-size: 24px;
+      }
+    }
+    .duration{
+      font-size: 12px;
+    }
+
+    .book{
+      .btn{
+        width: 100%;
+      }
+    }
+  }
+
+
+
+  .logo{
+    width: 15%
+  }
+  .arrival{
+    width: 12%;
+  }
+  .departure{
+    width: 12%;
+  }
+  .price{
+    width: 15%;
+  }
+
+  .availability{
+    width: 15%;
+  }
+  .duration{
+    width: 12%;
+  }
+
+  .book{
+    width: 19%;
+  }
+
+  @media (max-width:991px) {
+    .availability{
+      width: 10%;
+    }
+    .book{
+      width: 24%;
+    }
+  }
+
+}

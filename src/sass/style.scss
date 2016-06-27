@@ -1,0 +1,42 @@
+@import "style/variables";
+@import "style/header";
+
+body{
+  background: $gray-bg;
+}
+
+.search-result{
+  background: $white;
+  ul{
+    list-style: none;
+    padding: 0;
+    box-shadow: $box-shadow1;
+    li{
+      padding: 30px 20px 30px 40px;
+      border-bottom: 1px solid $border-color;
+      transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+
+      a{
+        color: $d-gray;
+        font-weight: bold;
+      }
+    }
+  }
+
+}
+
+.content{
+  background: $white;
+  box-shadow: $box-shadow1;
+  padding: 20px;
+  overflow: auto;
+
+  word-wrap: break-word;
+  .thumbnail{
+    margin-top: 20px;
+  }
+}
+
+.back{
+  margin: 10px 0;
+}

@@ -1,0 +1,148 @@
+.info-panel{
+
+  display: table;
+  width: 100%;
+  position: relative;
+  margin-bottom: 20px;
+
+
+    h3,h4{
+      font-family: $Montserrat;
+    }
+    h3{
+      font-size: 18px;
+    }
+    h4 {
+      font-size: 14px;
+    }
+    p{
+      font-size: 12px;
+    }
+
+  hr{
+    margin: 10px 0 0 0;
+    border-top: 1px solid $l-gray;
+  }
+
+  h3,h4{
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+  }
+
+  .info-panel-header{
+    display: table;
+    width: 100%;
+    padding: 15px 15px 0 15px;
+    i {
+      float: left;
+      margin-right: 10px;
+    }
+    h2,h3,h4{
+      float: left;
+      margin: 0;
+      margin-right: 10px;
+    }
+  }
+    .info-panel-body{
+      position: relative;
+      display: table;
+      width: 100%;
+      padding: 20px 20px 0 20px;
+
+      hr{
+        margin: 10px 0;
+        border-top: 1px solid $l-gray;
+      }
+
+    }
+    .info-panel-thumbnail{
+      float: left;
+      width: 35%;
+      padding-right: 20px;
+    }
+
+    .info-panel-desc{
+      float: left;
+      width: 65%;
+
+    }
+
+    .subscript{
+      font-size: 11px;
+      color: $dull;
+    }
+
+    .info-panel-thumbnail img{
+      width: 100%;
+    }
+
+    .info-panel-view{
+      display: table;
+      width: 100%
+    }
+    .info-panel-view p{
+      float: left;
+      width: 70%;
+      margin: 0;
+    }
+
+    .info-panel-view img{
+      float: left;
+      width: 30%;
+    }
+
+    .info-panel-offer{
+      display: table;
+      width: 100%;
+    }
+
+    .panel-cost{
+      float:left;
+      .cost{
+        font-size: 24px;
+        vertical-align: middle;
+        margin: 0 10px;
+      }
+    }
+    .panel-btn{
+      float: right;
+      a{
+        color: $white;
+      }
+      a:hover{
+        color: $white;
+      }
+    }
+
+    @media (max-width:767px) {
+      .info-panel-thumbnail{
+        width: 100%;
+        padding:0 0 20px 0px;
+      }
+
+      .info-panel-desc{
+        width: 100%;
+      }
+
+    }
+}
+
+.info-std-panel{
+  background: $d-gray;
+}
+.info-tooltip{
+  position: absolute;
+  right: 0;
+  top: 0;
+  .ico-dia{
+    background: url('../img/cornerDimondIcon.png');
+  }
+  z-index:999;
+}
+
+.ico-dia{
+  background: url('../img/dimaondIcon.png') no-repeat;
+  width: 20px;
+  height: 20px;
+  display: block;
+}

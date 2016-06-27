@@ -1,0 +1,20 @@
+<div class="content" >
+
+  <div class="issue-details">
+    <div class="col-md-7">
+      <h3>{{issue.title}}</h3>
+
+      <p>
+        {{issue.body}}
+      </p>
+
+      <p>
+        <span class="label label-primary"><i class="fa fa-mouse-pointer"></i> Total Hits - {{hits}}</span>
+      </p>
+    </div>
+
+    <div class="col-md-3">
+      <a href="#" class="thumbnail" ng-click="showUser(issue.user)"><img src="{{issue.user.avatar_url}}" alt=""/></a>
+    </div>
+  </div>
+</div>
