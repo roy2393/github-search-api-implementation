@@ -7,6 +7,8 @@ myApp.controller('SearchController', function ($scope,$http, SearchOp) {
         if($scope.search.length>=3){
           SearchOp.getRepositories($scope.search)
               .success(function (repos) {
+                  delete $scope.issue;
+                  delete $scope.user;
                   $scope.related = repos;
                   // console.log(repos);
               })
@@ -18,6 +20,7 @@ myApp.controller('SearchController', function ($scope,$http, SearchOp) {
 
     $scope.showIssue = function(repo){
       delete $scope.related;
+      $scope.search = repo.full_name;
       $scope.full_name = repo.full_name;
       var today = +new Date;
       var ondDay = 1000 * 60 * 60 * 24;
